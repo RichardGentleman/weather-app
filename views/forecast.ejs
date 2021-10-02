@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/forecast.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Current Weather in <%= query %></h1>
+      </div>
+
+      <div class="day-box">
+        <img src="<%= imageURL %>" />
+        <h2><%= weatherDescription %></h2>
+
+        <p>Temperature: <%= temp %> &#176;C</p>
+        <p>Wind Speed: <%= wind %> m/s</p>
+        <p>Atmospheric Pressure: <%= pressure %> hPa</p>
+      </div>
+
+      <div class="attribute">
+        Image by
+        <a
+          href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3052118"
+          >Engin Akyurt</a
+        >
+        from
+        <a
+          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3052118"
+          >Pixabay</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
